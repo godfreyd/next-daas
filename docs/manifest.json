@@ -12,7 +12,7 @@
             "routes": [
               {
                 "title": "Easy profiling for Node.js Applications",
-                "path": "/docs/general/simple-profiling"
+                "path": "/docs/general/simple-profiling.md"
               },
               {
                 "title": "Debugging Guide",
