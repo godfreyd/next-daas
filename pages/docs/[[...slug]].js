@@ -15,9 +15,8 @@ import getRouteContext from '../../src/lib/get-route-context';
 import PageContent from '../../src/components/page-content';
 import Container from '../../src/components/container';
 import DocsPage from '../../src/components/docs/docs-page';
-import { Sidebar, SidebarMobile, Post, Category, Heading } from '../../src/components/sidebar';
+import { Sidebar, Post, Category, Heading } from '../../src/components/sidebar';
 import Page from '../../src/components/page';
-import Sticky from '../../src/components/sticky';
 import { useIsMobile } from '../../src/components/media-query';
 import FeedbackContext from '../../src/components/feedback-context';
 import Skeleton from '../../src/components/skeleton';
@@ -72,6 +71,7 @@ function SidebarRoutes({ isMobile, routes: currentRoutes, level = 1 }) {
 const Docs = ({ routes, route: _route, data, html }) => {
   const router = useRouter();
   const { asPath, isFallback, query } = router;
+  console.log(router)
   const isMobile = useIsMobile();
   const { route, prevRoute, nextRoute } = _route ? getRouteContext(_route, routes) : {};
 
@@ -111,11 +111,6 @@ const Docs = ({ routes, route: _route, data, html }) => {
       <Page title={title} description={false} sticky={!isMobile}>
         {route ? (
           <PageContent>
-            <Sticky shadow>
-              <SidebarMobile>
-                <SidebarRoutes isMobile routes={routes} />
-              </SidebarMobile>
-            </Sticky>
             <Container>
               <div className="content">
                 <Sidebar fixed>

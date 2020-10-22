@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { getSlug, removeFromLast, addTagToSlug } from '../../lib/docs/utils';
 import { GITHUB_URL, REPO_NAME } from '../../lib/github/constants';
 import addRouterEvents from '../../lib/add-router-events';
-import FooterFeedback from '../footer-feedback';
 import Button from '../button';
 import ArrowIcon from '../arrow-icon';
 import RightArrow from '../icons/arrow-right';
@@ -62,7 +61,6 @@ function DocsPage({ route, html, prevRoute, nextRoute }) {
 
       <hr />
 
-      <FooterFeedback />
 
       <footer>
         {tag ? (

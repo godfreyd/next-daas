@@ -1,19 +1,11 @@
 import { useState } from 'react';
 import cn from 'classnames';
-import Search from '../search';
 
 export default function Sidebar({ active, children, fixed }) {
   const [searching, setSearching] = useState(false);
 
   return (
     <aside className={cn('sidebar', { active, fixed, searching })}>
-      <div className="sidebar-search">
-        <Search
-          id="desktop-search"
-          onSearchStart={() => setSearching(true)}
-          onSearchClear={() => setSearching(false)}
-        />
-      </div>
       <div className="sidebar-content">{children}</div>
       <style jsx>{`
         .sidebar {
