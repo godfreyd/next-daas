@@ -1,0 +1,35 @@
+{
+    "routes": [
+      {
+        "title": "Documentation",
+        "heading": true,
+        "routes": [
+          { "title": "About documentation", "path": "/docs/index.md" },
+          { "title": "Getting Started Guide", "path": "/docs/getting-started.md" },
+          {
+            "title": "General",
+            "open": true,
+            "routes": [
+              {
+                "title": "Easy profiling for Node.js Applications",
+                "path": "/docs/general/simple-profiling.md"
+              },
+              {
+                "title": "Debugging Guide",
+                "path": "/docs/general/debugging-getting-started.md"
+              }
+            ]
+          },
+          { "title": "FAQ", "path": "/docs/faq.md" }
+        ]
+      },
+      {
+        "title": "API",
+        "heading": true,
+        "routes": [
+          { "title": "Node.js v12.19.0 Documentation", "path": "/docs/api/index.md" },
+          { "title": "About documentation", "path": "/docs/api/about.md" }
+        ]
+      }
+    ]
+}
