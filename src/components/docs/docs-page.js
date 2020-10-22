@@ -13,6 +13,7 @@ function DocsPage({ route, html, prevRoute, nextRoute }) {
   const router = useRouter();
   const { asPath, query } = router;
   const { tag, slug } = getSlug(query);
+  console.log(query, tag, slug)
   const editUrl = `${GITHUB_URL}/${REPO_NAME}/edit/canary${route.path}`;
 
   useEffect(() => {
