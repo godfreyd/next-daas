@@ -66,3 +66,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
     </details>
 
+4. Устанавливаем Material UI:
+
+    `npm install @material-ui/core`
+
+5. 

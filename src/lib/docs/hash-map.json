@@ -1,0 +1,8 @@
+{
+  "excluded": [
+    "quick-start"
+  ],
+  "redirects": {
+    "faq": "/faq"
+  }
+}
